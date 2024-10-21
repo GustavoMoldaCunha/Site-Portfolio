@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "h1";
+  src: url("../images/Fieldstones.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.aviso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-image: url("../images/bg.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.warning-box {
+  background: linear-gradient(to left, #0a0a0a, #3b3b3b);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.856), transparent 20px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.856), transparent 20px),
+    linear-gradient(to right, rgba(0, 0, 0, 0.856), transparent 20px),
+    linear-gradient(to left, rgba(0, 0, 0, 0.856), transparent 20px), #252631;
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.warning-box h1 {
+  color: #ffffff;
+  font-family: "h1", serif;
+}
+
+@media (max-width: 425px) {
+  .warning-box h1 {
+    font-size: 15px;
+  }
+  .warning-box {
+    padding: 20px;
+  }
+}

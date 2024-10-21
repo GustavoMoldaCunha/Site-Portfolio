@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Magzo";
+  src: url("../images/Kitward Demo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: #333;
+  font-family: "magzo", system-ui;
+}
+
+h2 {
+  color: #555;
+  font-family: "magzo", system-ui;
+  margin: 10px 0 0;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  background-color: #696969;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  margin: 40px;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(66, 66, 66, 0.1);
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

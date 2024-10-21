@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "duskdemonexpand";
+  src: url("../images/retrolagoonpersonaluse-lv3wy.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Milky";
+  src: url("../images/MilkyVintage-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Footer {
+  z-index: 200;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #030303, #3e3f52);
+}
+.Banner {
+  z-index: 200;
+  background: linear-gradient(to top, #030303, #3e3f52);
+}
+
+nav {
+  display: flex;
+  transition: background-color 0.5s ease;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "duskdemonexpand", sans-serif;
+  transition:
+    color 0.9s ease,
+    text-shadow 0.9s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow:
+    0 0 30px #baedf1e8,
+    0 0 20px #ffffff;
+}
+
+.navbar a {
+  margin: 0px 120px 0px 120px;
+}
+
+.navbarfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarfooter a {
+  margin: 0px 15px 0px 20px;
+}
+
+p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Milky", system-ui;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  .Footer {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .Banner {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .navbar a {
+    font-size: 27px;
+    justify-content: left;
+    margin-left: 15px;
+  }
+  ul.navbar {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin-top: 10px;
+  }
+
+  .navbarfooter ul {
+    align-self: flex-end;
+    margin: 0;
+    margin-bottom: auto;
+  }
+  .navbarfooter a {
+    align-self: flex-end;
+    margin: 0px 7vw 0px 0px;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 auto;
+    margin-left: 0%;
+    align-self: flex-end;
+  }
+  i {
+    font-size: 30px;
+  }
+}
